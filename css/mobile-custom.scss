@@ -1,0 +1,384 @@
+$cloud-burst: #21255b;
+$espresso: #5f1818;
+$cocoa-bean: #5b2020;
+$tabasco: #ad1917;
+$white: #ffffff;
+$black: #000000;
+$grey: #2b2b2b;
+$fun-blue: #1d56a4;
+
+.container, #top-right, #top-section, #social-footer-1 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+.clearfix {
+    clear: both;
+}
+
+.webding {
+    width: 16px;
+    margin: 0 5px;
+}
+.blue-link {
+    color: $fun-blue;
+
+    a, a:hover {
+        color: $fun-blue;
+    }
+}
+
+.red-link {
+    color: $tabasco;
+
+    a, a:hover {
+        color: $tabasco;
+    }
+}
+
+img {
+    width: 100%;
+    display: block;
+    border: $black 1px solid;
+}
+.icon {
+    width: 26px;
+    border: none;
+}
+
+.icon-rf-footer {
+    width: 40px;
+    border: none;
+}
+
+.heading, .title {
+    font-size: 24px;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 5px 10px;
+    margin: 10px 0;
+    color: $white;
+    
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3a5ea8+0,2c3666+100 */
+    background: rgb(58,94,168); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(58,94,168,1) 0%, rgba(44,54,102,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(58,94,168,1) 0%,rgba(44,54,102,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(58,94,168,1) 0%,rgba(44,54,102,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a5ea8', endColorstr='#2c3666',GradientType=1 ); /* IE6-9 */
+
+    border: black 0.25px solid;
+    -webkit-box-shadow: -2px 2px 10px 0 $black;
+    box-shadow: -2px 2px 10px 0 $black;
+    -webkit-box-shadow: -2px 2px 10px 0 $black;
+    box-shadow: -2px 2px 10px 0 $black;
+
+    
+    .sm-link {
+        display: block;
+        font-size: 14px;
+        line-height: 13px;
+        text-align: center;
+        color: $white;
+        
+
+        a, a:hover {
+            color: $white;
+        }
+    }
+
+    &.overlap {
+        z-index: 1000;
+        position: relative;
+    }
+    
+}
+
+.overlap-img {
+    margin-top: -10px;
+}
+
+.margin-left {
+    margin-left: 30px;
+}
+
+.margin-right {
+    margin-right: 30px;
+}
+
+figcaption {
+    margin: 10px 0 10px 0;
+    font-size: 15px;
+    line-height: 15px;
+    color: $espresso;
+}
+
+.title {
+    width: 100%;
+    padding: 5px 0;
+    margin: 10px 0 10px 10px;
+    color:  $cloud-burst;
+    border-bottom: $cloud-burst 2px solid;  
+}
+
+article {
+    font-size: 15px;
+    line-height: 22px;
+    margin: 5px 0 20px 10px;
+
+    h2 {
+        font-size: 42px;
+        color: $cloud-burst;
+    }
+
+    span {
+        color: $cloud-burst;
+    }
+
+    figure {
+        max-width: 450px;
+    }
+}
+
+
+#top-bar {
+    width: 100%;
+    // max-width: 1024px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    color: $white;
+    text-align: center;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b5ea9+0,3b5ea9+83,2c3666+100 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b5ea9+0,3b5ea9+55,2c3666+100 */
+    background: rgb(59,94,169); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(59,94,169,1) 0%, rgba(59,94,169,1) 55%, rgba(44,54,102,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(59,94,169,1) 0%,rgba(59,94,169,1) 55%,rgba(44,54,102,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(59,94,169,1) 0%,rgba(59,94,169,1) 55%,rgba(44,54,102,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b5ea9', endColorstr='#2c3666',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    border-bottom: $black 1px solid; 
+}
+
+#hidden-text {
+    max-width: 1024px;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    color: $black;
+
+    a, a:hover {
+        color: $black;
+    }
+}
+
+#page-info {
+    max-width: 1024px;
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 10px;
+
+    p {
+        width: 80%;
+        text-align: left;
+    }
+    
+    figure {
+        text-align: center;
+
+        img {
+            width: 61px;
+            height: 37px;
+        }
+    }
+    
+}
+
+#wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 25px;
+    @media (max-width: 992px) {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    #main-header {
+        text-align: center;
+        margin-bottom: 30px;
+
+        img {
+            max-width: 967px;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-style: italic;
+            color: $cloud-burst;
+        }
+    }
+
+    #top-left {
+        width: 325px;
+        max-width: 325px;
+        padding-right: 10px;
+
+        #edition-number {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 19px;
+            color: $cloud-burst;
+
+            a, a:hover {
+                color: $cloud-burst;
+            }
+
+            span {
+                font-size: 24px; 
+            }
+        }
+
+        #contents {
+            padding: 10px 15px;
+            background-color: #cebca5;
+            color: $black;
+
+            a, a:hover {
+                color: $black;
+                font-weight: bold;
+            }
+
+            h3 {            
+                color: $cocoa-bean;
+                font-size: 24px;
+                
+            }
+            ul {
+                padding-left: 0;
+
+                li {
+                    list-style: none;
+                    padding: 6px 0;
+                    font-size: 16px;
+                    line-height: 18px;
+        
+                    &:before {
+                        content: '';
+                        display: inline-block;
+                        height: 10px;
+                        width: 10px;
+                        background: url(../img/railpower_logo-icon.png) no-repeat;
+                        background-size: contain;
+                    }
+                }
+            }
+            
+        }
+
+        #contents-caption {
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        #info {
+            padding: 10px 15px;
+
+            header {
+                color: $cloud-burst;
+                font-size: 18px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }   
+
+    #top-right {
+        max-width: 70%;
+        flex-grow: 1;
+        padding-left: 15px;
+        
+
+        #top-right-article-1{
+            article {               
+                padding-right: 25px; 
+                color: $black;
+
+                span {
+                    color: $cloud-burst;
+                }
+            }
+        }
+        #top-right-article-2{            
+            article {                
+                color: $cocoa-bean;
+            }
+            figure {
+                margin: 10px 0 10px 10px;
+                img {
+                    // max-width: 786px;
+                }
+            }
+        }
+    }
+
+    #middle-section {
+        .container-fluid {
+            padding-right: 0;
+            margin-right: -15px;
+        }
+    }
+
+    #social-footer-1 {
+        padding: 0 5px;
+        font-size: 15px;
+        color: $cloud-burst;
+
+        a, a:hover {
+            color: $cloud-burst;
+        }
+
+        ul {
+            flex-grow: 1;
+            
+            li {
+                list-style-type: none;
+                display: inline-block;                
+            }
+
+            &.socials {                   
+                display: inline-block; 
+                text-align: right;
+                
+                img {
+                    display: inline-block;;
+                }
+            }
+        }
+
+        figure {
+            flex-grow: 0;
+        }
+
+        
+        
+    }
+}
+
+
+
+
