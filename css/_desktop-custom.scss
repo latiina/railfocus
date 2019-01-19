@@ -5,6 +5,7 @@ $tabasco: #ad1917;
 $white: #ffffff;
 $black: #000000;
 $grey: #2b2b2b;
+$light-grey: #f1f1f1;
 $fun-blue: #1d56a4;
 
 .container, #top-right, #top-section, #social-footer-1 {
@@ -20,7 +21,20 @@ $fun-blue: #1d56a4;
 .webding {
     width: 16px;
     margin: 0 5px;
+    border: none;
 }
+
+.video-frame {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+    + figure {
+        margin-bottom: 20px;
+    }
+}
+
 .blue-link {
     color: $fun-blue;
 
@@ -35,6 +49,15 @@ $fun-blue: #1d56a4;
     a, a:hover {
         color: $tabasco;
     }
+}
+
+.ad-300 {
+    max-width: 300px;
+}
+
+.ad-728 {
+    max-width: 728px;
+    margin: 30px auto;
 }
 
 img {
@@ -52,6 +75,91 @@ img {
     border: none;
 }
 
+.map-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#img-knowledge {
+    max-width: 93px;
+}
+
+#img-feedback {
+    max-width: 125px;
+}
+
+#img-rf-logo {
+    max-width: 108px;
+}
+
+#img-donation{
+    max-width: 181px;
+}
+
+.promo-box {
+    margin-bottom: 20px;
+    padding: 10px 20px 5px 20px;
+    width: 345px;
+
+    background-color: $light-grey;
+
+    -moz-border-radius: 15px 15px 15px 15px; /* FF3.6-15 */
+    -webkit-border-radius: 15px 15px 15px 15px; /* Chrome10-25,Safari5.1-6 */
+    border-radius: 15px 15px 15px 15px; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+    -moz-box-shadow: 4px 6px 19px -4px $black;
+    -webkit-box-shadow: 4px 6px 19px -4px $black;
+    box-shadow: 4px 6px 19px -4px $black;
+
+    border: $black 1px solid;
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    figure {
+        text-align: center;
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    figcaption {        
+        color: $cloud-burst;
+        font-size: 16px;
+
+        a:hover {
+            text-decoration: none;
+        }
+        
+        h3 {
+            color: $cloud-burst;
+            font-size: 20px;
+
+            a, a:hover {
+                color: $cloud-burst;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }    
+
+    &.side-box {
+        max-width: 294px;
+
+        figcaption {
+            color: $cloud-burst;
+            font-size: 11px;
+            
+            h3 {
+                color: $cloud-burst;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
 .heading, .title {
     font-size: 24px;
 }
@@ -62,7 +170,7 @@ img {
     align-items: flex-start;
     width: 100%;
     padding: 5px 10px;
-    margin: 10px 0;
+    margin: 10px 0 20px 0;
     color: $white;
     
 
@@ -101,7 +209,7 @@ img {
 }
 
 .overlap-img {
-    margin-top: -10px;
+    margin-top: -20px;
 }
 
 .margin-left {
@@ -146,63 +254,68 @@ article {
     }
 }
 
-
-#top-bar {
-    width: 100%;
-    // max-width: 1024px;
-    padding: 10px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    color: $white;
-    text-align: center;
-
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b5ea9+0,3b5ea9+83,2c3666+100 */
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b5ea9+0,3b5ea9+55,2c3666+100 */
-    background: rgb(59,94,169); /* Old browsers */
-    background: -moz-linear-gradient(-45deg, rgba(59,94,169,1) 0%, rgba(59,94,169,1) 55%, rgba(44,54,102,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(59,94,169,1) 0%,rgba(59,94,169,1) 55%,rgba(44,54,102,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(59,94,169,1) 0%,rgba(59,94,169,1) 55%,rgba(44,54,102,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b5ea9', endColorstr='#2c3666',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-    border-bottom: $black 1px solid; 
-}
-
-#hidden-text {
-    max-width: 1024px;
-    width: 100%;
-    margin: 10px auto;
-    text-align: center;
-    color: $black;
-
-    a, a:hover {
-        color: $black;
-    }
-}
-
-#page-info {
-    max-width: 1024px;
-    width: 100%;
-    margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 10px;
-
-    p {
-        width: 80%;
-        text-align: left;
-    }
-    
-    figure {
+header {
+    #top-bar {
+        width: 100%;
+        // max-width: 1024px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        color: $white;
         text-align: center;
-
+    
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b5ea9+0,3b5ea9+83,2c3666+100 */
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b5ea9+0,3b5ea9+55,2c3666+100 */
+        background: rgb(59,94,169); /* Old browsers */
+        background: -moz-linear-gradient(-45deg, rgba(59,94,169,1) 0%, rgba(59,94,169,1) 55%, rgba(44,54,102,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, rgba(59,94,169,1) 0%,rgba(59,94,169,1) 55%,rgba(44,54,102,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, rgba(59,94,169,1) 0%,rgba(59,94,169,1) 55%,rgba(44,54,102,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b5ea9', endColorstr='#2c3666',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    
+        border-bottom: $black 1px solid; 
+    
         img {
-            width: 61px;
-            height: 37px;
+            border: none;
         }
     }
     
+    #hidden-text {
+        max-width: 1024px;
+        width: 100%;
+        margin: 10px auto;
+        text-align: center;
+        color: $black;
+    
+        a, a:hover {
+            color: $black;
+        }
+    }
+    
+    #page-info {
+        max-width: 1024px;
+        width: 100%;
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 10px;
+    
+        p {
+            width: 80%;
+            text-align: left;
+        }
+        
+        figure {
+            text-align: center;
+    
+            img {
+                width: 61px;
+                height: 37px;
+            }
+        }
+        
+    }
 }
 
 #wrapper {
@@ -293,7 +406,7 @@ article {
             padding: 20px 10px;
         }
 
-        #info {
+        #help {
             padding: 10px 15px;
 
             header {
@@ -312,7 +425,7 @@ article {
         padding-left: 15px;
         
 
-        #top-right-article-1{
+        #editorial{
             article {               
                 padding-right: 25px; 
                 color: $black;
@@ -322,20 +435,17 @@ article {
                 }
             }
         }
-        #top-right-article-2{            
+        #headlight{            
             article {                
                 color: $cocoa-bean;
             }
             figure {
-                margin: 10px 0 10px 10px;
-                img {
-                    // max-width: 786px;
-                }
-            }
+                margin: 10px 0 10px 10px;                
+            }            
         }
     }
 
-    #middle-section {
+    #story1 {
         .container-fluid {
             padding-right: 0;
             margin-right: -15px;
@@ -376,6 +486,42 @@ article {
         
         
     }
+
+    #bottom-left-column {
+        max-width: 70%;
+        flex-grow: 1;
+        padding-right: 15px;
+
+        
+    }
+
+    #bottom-right-column {
+        width: 325px;
+        max-width: 325px;
+        padding-left: 10px;
+
+        #bottom-right-article-1 {
+            margin-top: 9px;
+        }
+    }
+
+    #useful-websites {
+
+        > article > a > img {
+            display: inline-block;
+        }
+
+    }
+}
+
+footer {
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 0 25px;
+    text-align: center;
+    font-size: 15px;
+    
 }
 
 
