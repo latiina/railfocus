@@ -75,9 +75,19 @@ img {
     border: none;
 }
 
-.map-title {
-    font-weight: bold;
-    font-size: 18px;
+#map {
+    .map-title {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .map-img {
+        padding-bottom: 40px;
+        max-width: 800px
+    }
+}
+
+#img-knowledge, #img-feedback, #img-rf-logo, #img-donation {
+    border: none;
 }
 
 #img-knowledge {
@@ -85,7 +95,7 @@ img {
 }
 
 #img-feedback {
-    max-width: 125px;
+    max-width: 108px;
 }
 
 #img-rf-logo {
@@ -98,7 +108,7 @@ img {
 
 .promo-box {
     margin-bottom: 20px;
-    padding: 10px 20px 5px 20px;
+    padding: 20px 20px 0px 20px;
     width: 345px;
 
     background-color: $light-grey;
@@ -146,7 +156,8 @@ img {
     }    
 
     &.side-box {
-        max-width: 294px;
+        max-width: 262px;
+        margin: 0 auto 20px;
 
         figcaption {
             color: $cloud-burst;
@@ -241,7 +252,7 @@ article {
     margin: 5px 0 20px 10px;
 
     h2 {
-        font-size: 42px;
+        font-size: 36px;
         color: $cloud-burst;
     }
 
@@ -252,6 +263,10 @@ article {
     figure {
         max-width: 450px;
     }
+}
+
+.column-article-img {
+    max-width: 300px;
 }
 
 header {
@@ -285,10 +300,10 @@ header {
         width: 100%;
         margin: 10px auto;
         text-align: center;
-        color: $black;
+        color: $white;
     
         a, a:hover {
-            color: $black;
+            color: $white;
         }
     }
     
@@ -406,18 +421,32 @@ header {
             padding: 20px 10px;
         }
 
-        #help {
-            padding: 10px 15px;
+        #help-ad-desktop {            
 
-            header {
-                color: $cloud-burst;
-                font-size: 18px;
-            }
-            p {
-                font-size: 14px;
+            #help-desktop {
+                padding: 10px 15px;
+                
+                header {
+                    color: $cloud-burst;
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 14px;
+                }
             }
         }
     }   
+
+
+    #help-ad-mobile {
+        @media (min-width: 768px) {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+    }
 
     #top-right {
         max-width: 70%;
@@ -450,11 +479,27 @@ header {
             padding-right: 0;
             margin-right: -15px;
         }
+        article {
+            margin-bottom: 20px;
+        }
+    }
+
+    #story2 {
+        figure {
+            position: relative;
+
+            p {
+                position: absolute;
+                margin-top: -62%;
+                margin-left: 50%;
+                font-size: 50px;
+            }
+        }
     }
 
     #social-footer-1 {
         padding: 0 5px;
-        font-size: 15px;
+        font-size: 14px;
         color: $cloud-burst;
 
         a, a:hover {
@@ -491,8 +536,6 @@ header {
         max-width: 70%;
         flex-grow: 1;
         padding-right: 15px;
-
-        
     }
 
     #bottom-right-column {
@@ -505,12 +548,57 @@ header {
         }
     }
 
-    #useful-websites {
+    #social-footer-2 {
+        padding: 0 5px;
+        font-size: 15px;
+        margin-bottom: 20px;
+        color: $cloud-burst;        
+        text-align: center;
 
-        > article > a > img {
-            display: inline-block;
+        a, a:hover {
+            color: $cloud-burst;
         }
 
+        ul {
+            flex-grow: 1;
+            
+            li {
+                list-style-type: none;
+                display: inline-block;                
+            }
+
+            &.socials {                   
+                display: inline-block; 
+                text-align: center;
+                
+                img {
+                    display: inline-block;;
+                }
+            }
+        }
+
+        figure {
+            img {
+                margin: 0 auto;
+            }
+
+        }
+    }    
+
+    #useful-websites {
+
+        article > div > a > img {
+            display: inline-block;
+        }
+    }
+
+    #promo-box-wrapper {
+        padding-bottom: 35px;
+        
+
+        #bottom-row {
+            justify-content: space-between;
+        }
     }
 }
 
