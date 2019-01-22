@@ -19,7 +19,7 @@ $fun-blue: #1d56a4;
 }
 
 .webding {
-    width: 16px;
+    width: 10px;
     margin: 0 5px;
     border: none;
 }
@@ -103,7 +103,11 @@ img {
     }
     .map-img {
         padding-bottom: 40px;
-        max-width: 800px
+        max-width: 800px;
+
+        img {
+            border: none;
+        }
     }
 }
 
@@ -130,7 +134,7 @@ img {
 .promo-box {
     margin-bottom: 20px;
     padding: 20px 20px 0px 20px;
-    width: 345px;
+    max-width: 345px;
 
     background-color: $light-grey;
 
@@ -210,7 +214,7 @@ img {
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    padding: 5px 10px;
+    padding: 0 10px;
     margin: 10px 0 20px 0;
     color: $white;
     
@@ -230,9 +234,9 @@ img {
 
     
     .sm-link {
+        padding-top: 5px;
         display: block;
         font-size: 14px;
-        line-height: 13px;
         text-align: center;
         color: $white;
         
@@ -246,11 +250,16 @@ img {
         z-index: 1000;
         position: relative;
     }
+
+    > span.h-alignment {
+        margin: 3px 0 7px 0;
+        line-height: 25px;
+    }
     
 }
 
 .overlap-img {
-    margin-top: -20px;
+    margin-top: -21px;
 }
 
 .margin-left {
@@ -279,7 +288,7 @@ figcaption {
 .title {
     width: 100%;
     padding: 5px 0;
-    margin: 10px 0 10px 10px;
+    margin: 10px 0 10px 0;
     color:  $cloud-burst;
     border-bottom: $cloud-burst 2px solid;  
 }
@@ -287,7 +296,7 @@ figcaption {
 article {
     font-size: 15px;
     line-height: 22px;
-    margin: 5px 0 20px 10px;
+    margin: 5px 0 20px 0;
 
     h2 {
         font-size: 25px;
@@ -327,7 +336,7 @@ header {
         padding: 10px;
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-between;
+        justify-content: center;
         color: $white;
         text-align: center;
     
@@ -349,7 +358,7 @@ header {
     #hidden-text {
         max-width: 1200px;
         width: 100%;
-        margin: 10px auto;
+        margin: 0 auto;
         text-align: center;
         color: $white;
 
@@ -363,11 +372,12 @@ header {
     #page-info {
         max-width: 1200px;
         width: 100%;
-        margin: 20px auto;
+        margin: 0 auto;
+        padding-bottom: 20px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding-top: 10px;
+        
         @media (max-width: 992px) {
             padding: 10px 15px 0 15px;
         }
@@ -467,26 +477,27 @@ header {
         #contents {
             padding: 10px 15px;
             background-color: #cebca5;
-            color: $black;
-
-            a, a:hover {
-                color: $black;
-                font-weight: bold;
-            }
+            color: $black;            
 
             h3 {            
                 color: $cocoa-bean;
                 font-size: 24px;
                 
             }
+            ul,li {
+                margin: 0;
+                padding: 0;
+            }
             ul {
-                padding-left: 0;
+                display: table;
 
                 li {
                     list-style: none;
                     padding: 6px 0;
                     font-size: 16px;
                     line-height: 18px;
+                    list-style: none;                    
+                    display: table-row;
         
                     &:before {
                         content: '';
@@ -495,6 +506,25 @@ header {
                         width: 10px;
                         background: url(../img/railpower_logo-icon.png) no-repeat;
                         background-size: contain;
+
+                       
+                        display: table-cell;
+                        text-align: right;
+                    }
+                    a, a:hover {
+                        color: $black;
+                        font-weight: bold;                         
+                    }
+
+                    a > div {
+                        font-weight: normal;
+                     }
+
+                     span {
+                        display: block;
+                        padding-left: 15px;
+                        margin-top: -4px;
+                        margin-bottom: 15px;
                     }
                 }
             }
@@ -583,7 +613,7 @@ header {
                 color: $cocoa-bean;
             }
             figure {
-                margin: 10px 0 10px 10px;                
+                margin: 10px 0 10px 0;                
             }            
         }
     }

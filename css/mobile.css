@@ -16506,7 +16506,7 @@ html.lb-disable-scrolling {
 
 /* line 21, _mobile-custom.scss */
 .webding {
-  width: 16px;
+  width: 10px;
   margin: 0 5px;
   border: none;
 }
@@ -16609,37 +16609,41 @@ img {
   padding-bottom: 40px;
   max-width: 800px;
 }
-
-/* line 110, _mobile-custom.scss */
-#img-knowledge, #img-feedback, #img-rf-logo, #img-donation {
+/* line 108, _mobile-custom.scss */
+#map .map-img img {
   border: none;
 }
 
 /* line 114, _mobile-custom.scss */
+#img-knowledge, #img-feedback, #img-rf-logo, #img-donation {
+  border: none;
+}
+
+/* line 118, _mobile-custom.scss */
 #img-knowledge {
   max-width: 93px;
 }
 
-/* line 118, _mobile-custom.scss */
+/* line 122, _mobile-custom.scss */
 #img-feedback {
   max-width: 108px;
 }
 
-/* line 122, _mobile-custom.scss */
+/* line 126, _mobile-custom.scss */
 #img-rf-logo {
   max-width: 108px;
 }
 
-/* line 126, _mobile-custom.scss */
+/* line 130, _mobile-custom.scss */
 #img-donation {
   max-width: 181px;
 }
 
-/* line 130, _mobile-custom.scss */
+/* line 134, _mobile-custom.scss */
 .promo-box {
   margin-bottom: 20px;
   padding: 20px 20px 0px 20px;
-  width: 345px;
+  max-width: 345px;
   background-color: #f1f1f1;
   -moz-border-radius: 15px 15px 15px 15px;
   /* FF3.6-15 */
@@ -16653,80 +16657,80 @@ img {
   border: #000000 1px solid;
 }
 @media (max-width: 1024px) and (min-width: 768px) {
-  /* line 130, _mobile-custom.scss */
+  /* line 134, _mobile-custom.scss */
   .promo-box {
     margin-left: 2%;
     max-width: 345px;
   }
 }
-/* line 152, _mobile-custom.scss */
+/* line 156, _mobile-custom.scss */
 .promo-box a:hover {
   text-decoration: none;
 }
-/* line 156, _mobile-custom.scss */
+/* line 160, _mobile-custom.scss */
 .promo-box figure {
   text-align: center;
 }
-/* line 158, _mobile-custom.scss */
+/* line 162, _mobile-custom.scss */
 .promo-box figure img {
   margin: 0 auto;
 }
-/* line 163, _mobile-custom.scss */
+/* line 167, _mobile-custom.scss */
 .promo-box figcaption {
   color: #21255b;
   font-size: 16px;
 }
-/* line 167, _mobile-custom.scss */
+/* line 171, _mobile-custom.scss */
 .promo-box figcaption a:hover {
   text-decoration: none;
 }
-/* line 171, _mobile-custom.scss */
+/* line 175, _mobile-custom.scss */
 .promo-box figcaption h3 {
   color: #21255b;
   font-size: 20px;
 }
-/* line 175, _mobile-custom.scss */
+/* line 179, _mobile-custom.scss */
 .promo-box figcaption h3 a, .promo-box figcaption h3 a:hover {
   color: #21255b;
 }
-/* line 178, _mobile-custom.scss */
+/* line 182, _mobile-custom.scss */
 .promo-box figcaption h3 a:hover {
   text-decoration: underline;
 }
-/* line 184, _mobile-custom.scss */
+/* line 188, _mobile-custom.scss */
 .promo-box.side-box {
   max-width: 262px;
   margin: 0 auto 20px;
 }
 @media (max-width: 992px) {
-  /* line 184, _mobile-custom.scss */
+  /* line 188, _mobile-custom.scss */
   .promo-box.side-box {
     max-width: 100%;
   }
 }
-/* line 192, _mobile-custom.scss */
+/* line 196, _mobile-custom.scss */
 .promo-box.side-box figcaption {
   color: #21255b;
   font-size: 11px;
 }
-/* line 196, _mobile-custom.scss */
+/* line 200, _mobile-custom.scss */
 .promo-box.side-box figcaption h3 {
   color: #21255b;
   font-size: 16px;
 }
 
-/* line 204, _mobile-custom.scss */
+/* line 208, _mobile-custom.scss */
 .heading, .title {
   font-size: 24px;
 }
 
-/* line 208, _mobile-custom.scss */
+/* line 212, _mobile-custom.scss */
 .heading {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  padding: 5px 10px;
+  padding: 0 10px;
   margin: 10px 0 20px 0;
   color: #ffffff;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3a5ea8+0,2c3666+100 */
@@ -16746,52 +16750,57 @@ img {
   -webkit-box-shadow: -2px 2px 10px 0 #000000;
   box-shadow: -2px 2px 10px 0 #000000;
 }
-/* line 232, _mobile-custom.scss */
+/* line 236, _mobile-custom.scss */
 .heading .sm-link {
+  padding-top: 5px;
   display: block;
   font-size: 14px;
-  line-height: 13px;
   text-align: center;
   color: #ffffff;
 }
-/* line 240, _mobile-custom.scss */
+/* line 244, _mobile-custom.scss */
 .heading .sm-link a, .heading .sm-link a:hover {
   color: #ffffff;
 }
-/* line 245, _mobile-custom.scss */
+/* line 249, _mobile-custom.scss */
 .heading.overlap {
   z-index: 1000;
   position: relative;
 }
-
-/* line 252, _mobile-custom.scss */
-.overlap-img {
-  margin-top: -20px;
+/* line 254, _mobile-custom.scss */
+.heading > span.h-alignment {
+  margin: 3px 0 7px 0;
+  line-height: 25px;
 }
 
-/* line 256, _mobile-custom.scss */
+/* line 261, _mobile-custom.scss */
+.overlap-img {
+  margin-top: -21px;
+}
+
+/* line 265, _mobile-custom.scss */
 .margin-left {
   margin-left: 30px;
 }
 @media (max-width: 992px) {
-  /* line 256, _mobile-custom.scss */
+  /* line 265, _mobile-custom.scss */
   .margin-left {
     margin-left: 0;
   }
 }
 
-/* line 264, _mobile-custom.scss */
+/* line 273, _mobile-custom.scss */
 .margin-right {
   margin-right: 30px;
 }
 @media (max-width: 992px) {
-  /* line 264, _mobile-custom.scss */
+  /* line 273, _mobile-custom.scss */
   .margin-right {
     margin-right: 0;
   }
 }
 
-/* line 272, _mobile-custom.scss */
+/* line 281, _mobile-custom.scss */
 figcaption {
   margin: 10px 0 10px 0;
   font-size: 15px;
@@ -16799,65 +16808,65 @@ figcaption {
   color: #5f1818;
 }
 
-/* line 279, _mobile-custom.scss */
+/* line 288, _mobile-custom.scss */
 .title {
   width: 100%;
   padding: 5px 0;
-  margin: 10px 0 10px 10px;
+  margin: 10px 0 10px 0;
   color: #21255b;
   border-bottom: #21255b 2px solid;
 }
 
-/* line 287, _mobile-custom.scss */
+/* line 296, _mobile-custom.scss */
 article {
   font-size: 15px;
   line-height: 22px;
-  margin: 5px 0 20px 10px;
+  margin: 5px 0 20px 0;
 }
-/* line 292, _mobile-custom.scss */
+/* line 301, _mobile-custom.scss */
 article h2 {
   font-size: 25px;
   color: #21255b;
 }
 @media (min-width: 576px) {
-  /* line 292, _mobile-custom.scss */
+  /* line 301, _mobile-custom.scss */
   article h2 {
     font-size: 36px;
   }
 }
-/* line 301, _mobile-custom.scss */
+/* line 310, _mobile-custom.scss */
 article span {
   color: #21255b;
 }
-/* line 305, _mobile-custom.scss */
+/* line 314, _mobile-custom.scss */
 article figure {
   max-width: 450px;
 }
 @media (max-width: 992px) {
-  /* line 305, _mobile-custom.scss */
+  /* line 314, _mobile-custom.scss */
   article figure {
     max-width: 100%;
   }
 }
 
-/* line 314, _mobile-custom.scss */
+/* line 323, _mobile-custom.scss */
 .column-article-img {
   max-width: 300px;
 }
 @media (max-width: 992px) {
-  /* line 314, _mobile-custom.scss */
+  /* line 323, _mobile-custom.scss */
   .column-article-img {
     max-width: 100%;
   }
 }
 
-/* line 324, _mobile-custom.scss */
+/* line 333, _mobile-custom.scss */
 header #top-bar {
   width: 100%;
   padding: 10px;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
   color: #ffffff;
   text-align: center;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b5ea9+0,3b5ea9+83,2c3666+100 */
@@ -16874,45 +16883,45 @@ header #top-bar {
   /* IE6-9 fallback on horizontal gradient */
   border-bottom: #000000 1px solid;
 }
-/* line 344, _mobile-custom.scss */
+/* line 353, _mobile-custom.scss */
 header #top-bar img {
   border: none;
 }
-/* line 349, _mobile-custom.scss */
+/* line 358, _mobile-custom.scss */
 header #hidden-text {
   max-width: 1200px;
   width: 100%;
-  margin: 10px auto;
+  margin: 0 auto;
   text-align: center;
   color: #ffffff;
 }
-/* line 358, _mobile-custom.scss */
+/* line 367, _mobile-custom.scss */
 header #hidden-text a, header #hidden-text a:hover {
   color: #ffffff;
 }
-/* line 363, _mobile-custom.scss */
+/* line 372, _mobile-custom.scss */
 header #page-info {
   max-width: 1200px;
   width: 100%;
-  margin: 20px auto;
+  margin: 0 auto;
+  padding-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 10px;
 }
 @media (max-width: 992px) {
-  /* line 363, _mobile-custom.scss */
+  /* line 372, _mobile-custom.scss */
   header #page-info {
     padding: 10px 15px 0 15px;
   }
 }
-/* line 375, _mobile-custom.scss */
+/* line 385, _mobile-custom.scss */
 header #page-info p {
   width: 80%;
   text-align: left;
 }
 @media (max-width: 992px) {
-  /* line 375, _mobile-custom.scss */
+  /* line 385, _mobile-custom.scss */
   header #page-info p {
     width: 100%;
     text-align: center;
@@ -16921,22 +16930,22 @@ header #page-info p {
   }
 }
 @media (max-width: 992px) {
-  /* line 387, _mobile-custom.scss */
+  /* line 397, _mobile-custom.scss */
   header #page-info .en-center {
     margin: 0 auto;
   }
 }
-/* line 393, _mobile-custom.scss */
+/* line 403, _mobile-custom.scss */
 header #page-info figure {
   text-align: center;
 }
-/* line 396, _mobile-custom.scss */
+/* line 406, _mobile-custom.scss */
 header #page-info figure img {
   width: 61px;
   height: 37px;
 }
 
-/* line 405, _mobile-custom.scss */
+/* line 415, _mobile-custom.scss */
 #wrapper {
   max-width: 1200px;
   width: 100%;
@@ -16946,92 +16955,94 @@ header #page-info figure img {
   box-shadow: 0 4px 20px 1px #2b2b2b;
 }
 @media (max-width: 992px) {
-  /* line 405, _mobile-custom.scss */
+  /* line 415, _mobile-custom.scss */
   #wrapper {
     -webkit-box-shadow: none;
     box-shadow: none;
   }
 }
-/* line 418, _mobile-custom.scss */
+/* line 428, _mobile-custom.scss */
 #wrapper #main-header {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 422, _mobile-custom.scss */
+/* line 432, _mobile-custom.scss */
 #wrapper #main-header img {
   max-width: 967px;
   margin: 0 auto;
   padding-top: 20px;
   border: none;
 }
-/* line 429, _mobile-custom.scss */
+/* line 439, _mobile-custom.scss */
 #wrapper #main-header h1 {
   font-size: 22px;
   font-style: italic;
   color: #21255b;
 }
 @media (max-width: 992px) {
-  /* line 436, _mobile-custom.scss */
+  /* line 446, _mobile-custom.scss */
   #wrapper #top-section {
     max-width: 100%;
   }
 }
-/* line 442, _mobile-custom.scss */
+/* line 452, _mobile-custom.scss */
 #wrapper #top-left {
   width: 325px;
   max-width: 325px;
   padding-right: 10px;
 }
 @media (max-width: 992px) {
-  /* line 442, _mobile-custom.scss */
+  /* line 452, _mobile-custom.scss */
   #wrapper #top-left {
     width: 100%;
     max-width: 100%;
   }
 }
-/* line 452, _mobile-custom.scss */
+/* line 462, _mobile-custom.scss */
 #wrapper #top-left #edition-number {
   text-align: center;
   padding: 20px 0;
   font-size: 19px;
   color: #21255b;
 }
-/* line 458, _mobile-custom.scss */
+/* line 468, _mobile-custom.scss */
 #wrapper #top-left #edition-number a, #wrapper #top-left #edition-number a:hover {
   color: #21255b;
 }
-/* line 462, _mobile-custom.scss */
+/* line 472, _mobile-custom.scss */
 #wrapper #top-left #edition-number span {
   font-size: 24px;
 }
-/* line 467, _mobile-custom.scss */
+/* line 477, _mobile-custom.scss */
 #wrapper #top-left #contents {
   padding: 10px 15px;
   background-color: #cebca5;
   color: #000000;
 }
-/* line 472, _mobile-custom.scss */
-#wrapper #top-left #contents a, #wrapper #top-left #contents a:hover {
-  color: #000000;
-  font-weight: bold;
-}
-/* line 477, _mobile-custom.scss */
+/* line 482, _mobile-custom.scss */
 #wrapper #top-left #contents h3 {
   color: #5b2020;
   font-size: 24px;
 }
-/* line 482, _mobile-custom.scss */
-#wrapper #top-left #contents ul {
-  padding-left: 0;
+/* line 487, _mobile-custom.scss */
+#wrapper #top-left #contents ul, #wrapper #top-left #contents li {
+  margin: 0;
+  padding: 0;
 }
-/* line 485, _mobile-custom.scss */
+/* line 491, _mobile-custom.scss */
+#wrapper #top-left #contents ul {
+  display: table;
+}
+/* line 494, _mobile-custom.scss */
 #wrapper #top-left #contents ul li {
   list-style: none;
   padding: 6px 0;
   font-size: 16px;
   line-height: 18px;
+  list-style: none;
+  display: table-row;
 }
-/* line 491, _mobile-custom.scss */
+/* line 502, _mobile-custom.scss */
 #wrapper #top-left #contents ul li:before {
   content: '';
   display: inline-block;
@@ -17039,208 +17050,226 @@ header #page-info figure img {
   width: 10px;
   background: url(../img/railpower_logo-icon.png) no-repeat;
   background-size: contain;
+  display: table-cell;
+  text-align: right;
 }
-/* line 504, _mobile-custom.scss */
+/* line 514, _mobile-custom.scss */
+#wrapper #top-left #contents ul li a, #wrapper #top-left #contents ul li a:hover {
+  color: #000000;
+  font-weight: bold;
+}
+/* line 519, _mobile-custom.scss */
+#wrapper #top-left #contents ul li a > div {
+  font-weight: normal;
+}
+/* line 523, _mobile-custom.scss */
+#wrapper #top-left #contents ul li span {
+  display: block;
+  padding-left: 15px;
+  margin-top: -4px;
+  margin-bottom: 15px;
+}
+/* line 534, _mobile-custom.scss */
 #wrapper #top-left #contents-caption {
   text-align: center;
   padding: 20px 10px;
 }
 @media (min-width: 768px) {
-  /* line 509, _mobile-custom.scss */
+  /* line 539, _mobile-custom.scss */
   #wrapper #top-left #help-ad-desktop {
     display: block;
   }
 }
 @media (max-width: 768px) {
-  /* line 509, _mobile-custom.scss */
+  /* line 539, _mobile-custom.scss */
   #wrapper #top-left #help-ad-desktop {
     display: none;
   }
 }
-/* line 518, _mobile-custom.scss */
+/* line 548, _mobile-custom.scss */
 #wrapper #top-left #help-ad-desktop #help-desktop {
   padding: 10px 15px;
 }
-/* line 521, _mobile-custom.scss */
+/* line 551, _mobile-custom.scss */
 #wrapper #top-left #help-ad-desktop #help-desktop header {
   color: #21255b;
   font-size: 18px;
 }
-/* line 525, _mobile-custom.scss */
+/* line 555, _mobile-custom.scss */
 #wrapper #top-left #help-ad-desktop #help-desktop p {
   font-size: 14px;
 }
 @media (min-width: 768px) {
-  /* line 535, _mobile-custom.scss */
+  /* line 565, _mobile-custom.scss */
   #wrapper #help-ad-desktop {
     display: none;
   }
 }
 @media (max-width: 768px) {
-  /* line 541, _mobile-custom.scss */
+  /* line 571, _mobile-custom.scss */
   #wrapper #help-ad-mobile {
     display: block;
   }
-  /* line 544, _mobile-custom.scss */
+  /* line 574, _mobile-custom.scss */
   #wrapper #help-ad-mobile #help-mobile {
     padding: 10px 15px;
   }
-  /* line 547, _mobile-custom.scss */
+  /* line 577, _mobile-custom.scss */
   #wrapper #help-ad-mobile #help-mobile header {
     color: #21255b;
     font-size: 18px;
   }
-  /* line 551, _mobile-custom.scss */
+  /* line 581, _mobile-custom.scss */
   #wrapper #help-ad-mobile #help-mobile p {
     font-size: 14px;
   }
 }
-/* line 560, _mobile-custom.scss */
+/* line 590, _mobile-custom.scss */
 #wrapper #top-right {
   max-width: 70%;
   flex-grow: 1;
   padding-left: 15px;
 }
 @media (max-width: 992px) {
-  /* line 560, _mobile-custom.scss */
+  /* line 590, _mobile-custom.scss */
   #wrapper #top-right {
     max-width: 100%;
     padding-left: 0;
   }
 }
-/* line 572, _mobile-custom.scss */
+/* line 602, _mobile-custom.scss */
 #wrapper #top-right #editorial article {
   padding-right: 25px;
   color: #000000;
 }
-/* line 576, _mobile-custom.scss */
+/* line 606, _mobile-custom.scss */
 #wrapper #top-right #editorial article span {
   color: #21255b;
 }
-/* line 582, _mobile-custom.scss */
+/* line 612, _mobile-custom.scss */
 #wrapper #top-right #headlight article {
   color: #5b2020;
 }
-/* line 585, _mobile-custom.scss */
+/* line 615, _mobile-custom.scss */
 #wrapper #top-right #headlight figure {
-  margin: 10px 0 10px 10px;
+  margin: 10px 0 10px 0;
 }
-/* line 592, _mobile-custom.scss */
+/* line 622, _mobile-custom.scss */
 #wrapper #story1 .container-fluid {
   padding-right: 0;
   margin-right: -15px;
 }
-/* line 596, _mobile-custom.scss */
+/* line 626, _mobile-custom.scss */
 #wrapper #story1 article {
   margin-bottom: 20px;
 }
-/* line 602, _mobile-custom.scss */
+/* line 632, _mobile-custom.scss */
 #wrapper #story2 figure {
   position: relative;
 }
-/* line 605, _mobile-custom.scss */
+/* line 635, _mobile-custom.scss */
 #wrapper #story2 figure p {
   position: absolute;
   margin-top: -62%;
   margin-left: 50%;
   font-size: 50px;
 }
-/* line 614, _mobile-custom.scss */
+/* line 644, _mobile-custom.scss */
 #wrapper #social-footer-1 {
   padding: 0 5px;
   font-size: 14px;
   color: #21255b;
 }
 @media (max-width: 992px) {
-  /* line 614, _mobile-custom.scss */
+  /* line 644, _mobile-custom.scss */
   #wrapper #social-footer-1 {
     text-align: center;
     margin: 20px 0;
   }
 }
-/* line 624, _mobile-custom.scss */
+/* line 654, _mobile-custom.scss */
 #wrapper #social-footer-1 a, #wrapper #social-footer-1 a:hover {
   color: #21255b;
 }
-/* line 628, _mobile-custom.scss */
+/* line 658, _mobile-custom.scss */
 #wrapper #social-footer-1 ul {
   flex-grow: 1;
 }
 @media (min-width: 768px) {
-  /* line 628, _mobile-custom.scss */
+  /* line 658, _mobile-custom.scss */
   #wrapper #social-footer-1 ul {
     flex-grow: 1;
   }
 }
-/* line 635, _mobile-custom.scss */
+/* line 665, _mobile-custom.scss */
 #wrapper #social-footer-1 ul li {
   list-style-type: none;
   display: inline-block;
 }
 @media (max-width: 992px) {
-  /* line 640, _mobile-custom.scss */
+  /* line 670, _mobile-custom.scss */
   #wrapper #social-footer-1 ul li.sm-hidden {
     display: none;
   }
 }
-/* line 646, _mobile-custom.scss */
+/* line 676, _mobile-custom.scss */
 #wrapper #social-footer-1 ul.socials {
   display: inline-block;
   text-align: right;
 }
 @media (max-width: 992px) {
-  /* line 646, _mobile-custom.scss */
+  /* line 676, _mobile-custom.scss */
   #wrapper #social-footer-1 ul.socials {
     text-align: center;
     line-height: 35px;
   }
 }
-/* line 655, _mobile-custom.scss */
+/* line 685, _mobile-custom.scss */
 #wrapper #social-footer-1 ul.socials img {
   display: inline-block;
 }
-/* line 661, _mobile-custom.scss */
+/* line 691, _mobile-custom.scss */
 #wrapper #social-footer-1 figure {
   flex-grow: 0;
 }
 @media (max-width: 992px) {
-  /* line 666, _mobile-custom.scss */
+  /* line 696, _mobile-custom.scss */
   #wrapper #social-footer-1 figure figure img {
     flex-grow: 0;
     margin: 0 auto;
   }
 }
-/* line 679, _mobile-custom.scss */
+/* line 709, _mobile-custom.scss */
 #wrapper #bottom-left-column {
   max-width: 70%;
   flex-grow: 1;
   padding-right: 15px;
 }
 @media (max-width: 992px) {
-  /* line 679, _mobile-custom.scss */
+  /* line 709, _mobile-custom.scss */
   #wrapper #bottom-left-column {
     max-width: 100%;
   }
 }
-/* line 689, _mobile-custom.scss */
+/* line 719, _mobile-custom.scss */
 #wrapper #bottom-right-column {
   width: 325px;
   max-width: 325px;
   padding-left: 10px;
 }
 @media (max-width: 992px) {
-  /* line 689, _mobile-custom.scss */
+  /* line 719, _mobile-custom.scss */
   #wrapper #bottom-right-column {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
   }
 }
-/* line 700, _mobile-custom.scss */
+/* line 730, _mobile-custom.scss */
 #wrapper #bottom-right-column #bottom-right-article-1 {
   margin-top: 9px;
 }
-/* line 705, _mobile-custom.scss */
+/* line 735, _mobile-custom.scss */
 #wrapper #social-footer-2 {
   padding: 0 5px;
   font-size: 15px;
@@ -17248,61 +17277,61 @@ header #page-info figure img {
   color: #21255b;
   text-align: center;
 }
-/* line 712, _mobile-custom.scss */
+/* line 742, _mobile-custom.scss */
 #wrapper #social-footer-2 a, #wrapper #social-footer-2 a:hover {
   color: #21255b;
 }
-/* line 716, _mobile-custom.scss */
+/* line 746, _mobile-custom.scss */
 #wrapper #social-footer-2 ul {
   flex-grow: 1;
 }
-/* line 719, _mobile-custom.scss */
+/* line 749, _mobile-custom.scss */
 #wrapper #social-footer-2 ul li {
   list-style-type: none;
   display: inline-block;
 }
-/* line 724, _mobile-custom.scss */
+/* line 754, _mobile-custom.scss */
 #wrapper #social-footer-2 ul.socials {
   display: inline-block;
   text-align: center;
 }
 @media (max-width: 992px) {
-  /* line 724, _mobile-custom.scss */
+  /* line 754, _mobile-custom.scss */
   #wrapper #social-footer-2 ul.socials {
     text-align: center;
     line-height: 35px;
     padding: 0 15%;
   }
 }
-/* line 734, _mobile-custom.scss */
+/* line 764, _mobile-custom.scss */
 #wrapper #social-footer-2 ul.socials img {
   display: inline-block;
 }
-/* line 741, _mobile-custom.scss */
+/* line 771, _mobile-custom.scss */
 #wrapper #social-footer-2 figure img {
   margin: 0 auto;
 }
-/* line 749, _mobile-custom.scss */
+/* line 779, _mobile-custom.scss */
 #wrapper #useful-websites article > div > a > img {
   display: inline-block;
 }
-/* line 754, _mobile-custom.scss */
+/* line 784, _mobile-custom.scss */
 #wrapper #promo-box-wrapper {
   padding-bottom: 35px;
 }
-/* line 757, _mobile-custom.scss */
+/* line 787, _mobile-custom.scss */
 #wrapper #promo-box-wrapper #bottom-row {
   justify-content: space-around;
 }
 @media (max-width: 1024px) and (min-width: 768px) {
-  /* line 757, _mobile-custom.scss */
+  /* line 787, _mobile-custom.scss */
   #wrapper #promo-box-wrapper #bottom-row {
     justify-content: space-between;
     flex-wrap: nowrap;
   }
 }
 
-/* line 768, _mobile-custom.scss */
+/* line 798, _mobile-custom.scss */
 footer {
   max-width: 1200px;
   width: 100%;
