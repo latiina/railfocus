@@ -13,9 +13,20 @@ $fun-blue: #1d56a4;
     padding-right: 0px;
 }
 
-
 .clearfix {
     clear: both;
+}
+
+.overlay {
+    position: relative;
+    z-index: 1;
+
+     .overlay-img {                
+        position: absolute;
+        border: none;
+        top: 0;
+        left: 0;
+    }
 }
 
 .webding {
@@ -259,6 +270,7 @@ article {
     font-size: 15px;
     line-height: 22px;
     margin: 5px 0 20px 0;
+    text-align: justify;
 
     h2 {
         font-size: 36px;
@@ -320,9 +332,9 @@ header {
         max-width: 1024px;
         width: 100%;
         margin: 0 auto;
-        padding-bottom: 20px;
+        padding: 0 15px 20px 15px;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-between;
         padding-top: 10px;
     
@@ -474,7 +486,7 @@ header {
             display: none;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             display: block;
         }
     }
@@ -489,6 +501,10 @@ header {
             article {               
                 padding-right: 25px; 
                 color: $black;
+                
+                @media (max-width: 768px) {
+                    padding-right: 0; 
+                }
 
                 span {
                     color: $cloud-burst;

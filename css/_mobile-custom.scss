@@ -13,9 +13,29 @@ $fun-blue: #1d56a4;
     padding-right: 0px;
 }
 
+@media (min-width: 768px) {
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .row {
+        margin-right: -15px; 
+        margin-left: -15px;
+    }
+}
 
 .clearfix {
     clear: both;
+}
+
+.overlay {
+    position: relative;
+    z-index: 1;
+
+     .overlay-img {                
+        position: absolute;
+        border: none;
+    }
 }
 
 .webding {
@@ -217,6 +237,10 @@ img {
     padding: 0 10px;
     margin: 10px 0 20px 0;
     color: $white;
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+    }
     
 
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3a5ea8+0,2c3666+100 */
@@ -239,6 +263,10 @@ img {
         font-size: 14px;
         text-align: center;
         color: $white;
+
+        @media (max-width: 768px) {
+            text-align: right;
+        }
         
 
         a, a:hover {
@@ -297,6 +325,7 @@ article {
     font-size: 15px;
     line-height: 22px;
     margin: 5px 0 20px 0;
+    text-align: justify;
 
     h2 {
         font-size: 25px;
@@ -373,9 +402,9 @@ header {
         max-width: 1200px;
         width: 100%;
         margin: 0 auto;
-        padding-bottom: 20px;
+        padding: 0 15px 20px 15px;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-between;
         
         @media (max-width: 992px) {
@@ -396,7 +425,8 @@ header {
 
         .en-center {
             @media (max-width: 992px) {        
-                margin: 0 auto;
+                margin: 15px auto;
+
             }
         }
         
@@ -443,18 +473,18 @@ header {
         }
     }
 
-    #top-section {
-        @media (max-width: 992px) {
-            max-width: 100%;
-        }
-    }
+    // #top-section {
+    //     @media (max-width: 992px) {
+    //         max-width: 100%;
+    //     }
+    // }
 
     #top-left {
         width: 325px;
         max-width: 325px;
         padding-right: 10px;
 
-        @media (max-width: 992px) {
+        @media (max-width: 768px) {
             width: 100%;
             max-width: 100%;
         }        
@@ -541,7 +571,7 @@ header {
                 display: block;
             }
 
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                 display: none;
             }
 
@@ -567,7 +597,7 @@ header {
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         #help-ad-mobile {
             display: block;
 
@@ -592,7 +622,7 @@ header {
         flex-grow: 1;
         padding-left: 15px;
 
-        @media (max-width: 992px) {
+        @media (max-width: 768px) {
             max-width: 100%;
             padding-left: 0;
         }
@@ -602,6 +632,10 @@ header {
             article {               
                 padding-right: 25px; 
                 color: $black;
+
+                @media (max-width: 768px) {
+                    padding-right: 0; 
+                }
 
                 span {
                     color: $cloud-burst;
