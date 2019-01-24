@@ -33,7 +33,7 @@ This pulls all the the following styles together to one stylesheet:
     e) desktop-custom : all custom class and ids outside of boostrap
 
 
-# How to amend the SCSS Files 
+## How to amend the SCSS Files 
 To edit the custom style sheets I recomment you download Compass to you local machine but do not create a project as the config.rb is already within the folder.
 
 How to download compass: http://compass-style.org/install/
@@ -42,7 +42,7 @@ Once downloaded you can open _mobile-custom.scss OR  _desktop-custom.scss files 
 
 Run the compass compiler for the .css files to update.
 
-# Framework and apps used
+## Framework and apps used
 
 Acknowledgements and appreciation goes to the following sites to enable putting this one-pager together:
 
