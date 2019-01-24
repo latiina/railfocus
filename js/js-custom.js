@@ -32,7 +32,7 @@ jQuery(document).ready(function ($) {
 
     /*#region responsive code begin*/
 
-    var MAX_WIDTH = 91200;
+    var MAX_WIDTH = 1200;
 
     function ScaleSlider() {
         var containerElement = jssor_1_slider.$Elmt.parentNode;
