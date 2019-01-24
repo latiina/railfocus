@@ -12,12 +12,11 @@
 
     <body>
         <!-- START: text above main content -->
-        <header>
+        <header id="top">
 
             <!-- START: top blue bar -->
             <section id="top-bar">
-                <a href="..." title="...">
-                    <div class="overlay"><img src="img/overlay.png" class="overlay-img" style="width:26px;height:26px;"></div>
+                <a href="..." title="...">                    
                     <img src="img/railpower_logo-icon.png" alt="Rail Focus" class="icon"></a>
                 &nbsp;&nbsp;
                 <div class="top-bar-msg">
@@ -59,7 +58,6 @@
 
             <!-- START: Header logo -->
             <header id="main-header">
-                <div class="overlay"><img src="img/overlay.png" class="overlay-img" style="max-width:967px;max-height:150px;"></div>
                 <img src="img/railpower_logo.png" alt="...">
                 
                 <h1>The electronic railway journal for those with an interest in the railways of Great Britain</h1>
@@ -305,29 +303,16 @@
                             <div class="title">Headlight</div>
                             <article>
                                 Further down in this edition, I have taken a look at how the Rail Head Treatment Trains
-                                have changed over the years, so it is perhaps a good opportunity to start with a picture of
-                                one of this year’s
-                                workings.
-                                Those trains operating out of York usually make use of Class 20 locomotives, which have a
-                                low
-                                axle
-                                weight,
-                                because of some restrictions en route. Here 20302 is joined by 20312 as they power through
-                                Althorpe,
-                                near
-                                Scunthorpe. The lifting bridge, called the King George V bridge, is one that dates from
-                                19xx,
-                                and I
-                                always
-                                think makes a nice backdrop to an image. The bridge celebrated its ima100th anniversary
-                                last
-                                year and
-                                was
-                                designed to lift to allowing sailing barges on the River Trent to pass underneath.
+                                have changed over the years, so it is perhaps a good opportunity to start with a picture of one of this year’s workings. Those trains operating out of York usually make use of Class 20 locomotives, which have a low axle weight, because of some restrictions en route. Here 20302 is joined by 20312 as they power through Althorpe, near Scunthorpe. The lifting bridge, called the King George V bridge, is one that dates from 19xx, and I always think makes a nice backdrop to an image. The bridge celebrated its ima100th anniversary
+                                last year and was designed to lift to allowing sailing barges on the River Trent to pass underneath.
                             </article>
-                            <figure>
-                                <div class="overlay"><img src="img/overlay.png" class="overlay-img" style="max-width:790px;max-height:150px;"></div>
+                            <figure class="img-container">                                
                                 <img src="img/image1.jpg" title="..." class="lazy">
+                                <div class="img-credit">
+                                    <img src="img/railpower_logo-icon.png" />
+                                    <div>A thorpe - 7th November 2016<br>
+                                    Fred Smith</div>
+                                </div>
                             </figure>
                         </section>
                         <!-- END: headlight -->
@@ -356,9 +341,14 @@
                 <!-- END: story 1 heading-->
 
                 <!-- START: story 1 image -->
-                <figure class="overlap-img">
+                <figure class="overlap-img img-container">
                     <a href="img/image2.jpg" data-lightbox="story-1" data-title="CAPTION HERE1">
                         <img data-src="img/image2.jpg" title="..." class="lazy">
+                        <div class="img-credit">
+                            <img src="img/railpower_logo-icon.png" />
+                            <div>Maidenhead - 24th September 2016<br>
+                            Stuart Warr</div>
+                        </div>
                     </a>
                     <figcaption>
                         On 24th September, one of the Colas Class 70, 70805 works through Maidenhead station working the
@@ -407,7 +397,7 @@
                     was in 1924, can be seen in this view on the
                     ‘Britain from Above’ website. <br><br>
 
-                    <figure class="float-lg-right margin-left">
+                    <figure class="float-lg-right margin-left img-container">
                         <a href="img/image3.jpg" data-lightbox="story-1" data-title="CAPTION HERE2">
                             <img data-src="img/image3.jpg" alt="..." class="lazy">
                         </a>
@@ -449,7 +439,7 @@
                     (i.e. The driver) it remains a more cost-effective option
                     than employing a larger workshop to undertake the necessary tasks.<br><br>
 
-                    <figure class="float-lg-left margin-right">
+                    <figure class="float-lg-left margin-right img-container">
                         <a href="img/image3.jpg" data-lightbox="story-1" data-title="CAPTION HERE3">
                             <img data-src="img/image3.jpg" alt="..." class="lazy">
                         </a>
@@ -571,9 +561,14 @@
                 <!-- END: article with images floating either side -->
 
                 <!-- START: full with image on its own -->
-                <figure>
+                <figure class="img-container">
                     <a href="img/image2.jpg" data-lightbox="story-1" data-title="CAPTION HERE1">
                         <img src="img/image2.jpg" title="..." class="lazy">
+                        <div class="img-credit">
+                            <img src="img/railpower_logo-icon.png" />
+                            <div>Maidenhead - 24th September 2016<br>
+                            Stuart Warr</div>
+                        </div>
                     </a>
                     <figcaption>
                         On 24th September, one of the Colas Class 70, 70805 works through Maidenhead station working the
@@ -664,7 +659,7 @@
                     <ul class="col-sm">
                         <li><a href="..." title="...">Print Just This Story </a></li>
                         <li><img src="img/wingding-blue.png" alt="..." class="webding"></li>
-                        <li><a href="..." title="...">Back to the Top</a></li>
+                        <li><a href="#top" title="...">Back to the Top</a></li>
                         <li class="sm-hidden"><img src="img/wingding-blue.png" alt="..." class="webding"></li>
                         <li><a href="..." title="...">Make A Donation</a></li>
                         <li><img src="img/wingding-blue.png" alt="..." class="webding"></li>
@@ -686,7 +681,7 @@
 
             <!-- START: ad box and help MOBILE ONLY -->
             <section id="help-ad-mobile">
-                <!-- START: help DESKTOP version-->
+                <!-- START: help MOBILE version-->
                 <div id="help-mobile">
                     <header>Rail Focus needs YOUR help</header>
                     <p>As I have explained elsewhere, Rail Focus
@@ -711,7 +706,7 @@
                         knowledge to put the website together for me,
                         and to help with images as required.</p>
                 </div>
-                <!-- END: help DESKTOP version -->
+                <!-- END: help MOBILE version -->
 
                 <!-- START: AD BOX -->
                 <div class="ad-300">
@@ -851,7 +846,7 @@
                             <!-- END: slider 2 no thumbnails -->   
 
                             <!-- START: image with caption -->
-                            <figure>
+                            <figure class="img-container">
                                 <a href="img/image2.jpg" data-lightbox="story-1" data-title="CAPTION HERE1">
                                     <img data-src="img/image2.jpg" title="..." class="lazy">
                                 </a>
@@ -929,7 +924,7 @@
                                 under the
                                 watchful eye of Wimbledon Traincare Depot, as far as exams and maintenance are concerned.
                                 <br><br>
-                                <figure class="float-lg-left margin-right column-article-img">
+                                <figure class="float-lg-left margin-right column-article-img img-container">
                                     <a href="img/image3.jpg" data-lightbox="story-4" data-title="CAPTION HERE1">
                                         <img data-src="img/image3.jpg" alt="..." class="lazy">
                                     </a>
@@ -969,7 +964,7 @@
                                 which were also created
                                 at Staines. <br><br>
 
-                                <figure class="float-lg-right margin-left column-article-img">
+                                <figure class="float-lg-right margin-left column-article-img img-container">
                                     <a href="img/image3.jpg" data-lightbox="story-4" data-title="CAPTION HERE2">
                                         <img data-src="img/image3.jpg" alt="..." class="lazy">
                                     </a>
@@ -1059,7 +1054,7 @@
                                 <ul class="col-sm">
                                     <li><a href="" title="...">Print Just This Story </a></li>
                                     <li><img src="img/wingding-blue.png" alt="..." class="webding"></li>
-                                    <li><a href="..." title="...">Back to the Top</a></li>
+                                    <li><a href="#top" title="...">Back to the Top</a></li>
                                     <br>
                                     <li><a href="..." title="...">Make A Donation</a></li>
                                     <li><img src="img/wingding-blue.png" alt="..." class="webding"></li>
