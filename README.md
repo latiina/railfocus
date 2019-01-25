@@ -42,6 +42,16 @@ Once downloaded you can open _mobile-custom.scss OR  _desktop-custom.scss files 
 
 Run the compass compiler for the .css files to update.
 
+## Slider image sizes
+There are two Jssor sliders on this template. 
+
+1) Jssor_1- with thumbnails
+    Main image recommended size 1200x635px
+    Thumbnail 190x130px
+
+2) Jssor_2- no thumbnails - recommended size: 790x525px
+
+
 ## Framework and apps used
 
 Acknowledgements and appreciation goes to the following sites to enable putting this one-pager together:

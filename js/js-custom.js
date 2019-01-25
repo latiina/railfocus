@@ -1,61 +1,64 @@
 /* START: Jssor slider https://www.jssor.com/*/
 /* Slider with thumbnails */
 
-jQuery(document).ready(function ($) {
 
-    var jssor_1_SlideshowTransitions = [
-        {$Duration:800,x:1,$Easing:{$Left:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2,$Brother:{$Duration:800,x:-1,$Easing:{$Left:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2}}
-    ];
 
-    var jssor_1_options = {
-        $AutoPlay: 1,
-        $FillMode: 4,
-        $SlideshowOptions: {
-        $Class: $JssorSlideshowRunner$,
-        $Transitions: jssor_1_SlideshowTransitions,
-        $TransitionsOrder: 1
-        },
-        $ArrowNavigatorOptions: {
-        $Class: $JssorArrowNavigator$
-        },
-        $BulletNavigatorOptions: {
-        $Class: $JssorBulletNavigator$
-        },
-        $ThumbnailNavigatorOptions: {
-        $Class: $JssorThumbnailNavigator$,
-        $SpacingX: 5,
-        $SpacingY: 5
-        }
-    };
+jssor_1_slider_init = function() {
 
-    var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+var jssor_1_SlideshowTransitions = [
+    {$Duration:800,x:1,$Easing:{$Left:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2,$Brother:{$Duration:800,x:-1,$Easing:{$Left:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2}}
+];
 
-    /*#region responsive code begin*/
-
-    var MAX_WIDTH = 1200;
-
-    function ScaleSlider() {
-        var containerElement = jssor_1_slider.$Elmt.parentNode;
-        var containerWidth = containerElement.clientWidth;
-
-        if (containerWidth) {
-
-            var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-            jssor_1_slider.$ScaleWidth(expectedWidth);
-        }
-        else {
-            window.setTimeout(ScaleSlider, 30);
-        }
+var jssor_1_options = {
+    $AutoPlay: 1,
+    $SlideshowOptions: {
+    $Class: $JssorSlideshowRunner$,
+    $Transitions: jssor_1_SlideshowTransitions,
+    $TransitionsOrder: 1
+    },
+    $ArrowNavigatorOptions: {
+    $Class: $JssorArrowNavigator$
+    },
+    $BulletNavigatorOptions: {
+    $Class: $JssorBulletNavigator$
+    },
+    $ThumbnailNavigatorOptions: {
+    $Class: $JssorThumbnailNavigator$,
+    $SpacingX: 5,
+    $SpacingY: 5
     }
+};
 
-    ScaleSlider();
+var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
 
-    $(window).bind("load", ScaleSlider);
-    $(window).bind("resize", ScaleSlider);
-    $(window).bind("orientationchange", ScaleSlider);
-    /*#endregion responsive code end*/
-});
+/*#region responsive code begin*/
+
+var MAX_WIDTH = 1200;
+
+function ScaleSlider() {
+    var containerElement = jssor_1_slider.$Elmt.parentNode;
+    var containerWidth = containerElement.clientWidth;
+
+    if (containerWidth) {
+
+        var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+        jssor_1_slider.$ScaleWidth(expectedWidth);
+    }
+    else {
+        window.setTimeout(ScaleSlider, 30);
+    }
+}
+
+ScaleSlider();
+
+$Jssor$.$AddEvent(window, "load", ScaleSlider);
+$Jssor$.$AddEvent(window, "resize", ScaleSlider);
+$Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+/*#endregion responsive code end*/
+};
+
+    
 /* END: Jssor slider */
 
 /* START: Jssor slider https://www.jssor.com/*/
