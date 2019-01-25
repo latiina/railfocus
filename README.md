@@ -46,7 +46,7 @@ Run the compass compiler for the .css files to update.
 There are two Jssor sliders on this template. 
 
 1) Jssor_1- with thumbnails
-    Main image recommended size 1200x635px
+    Main image recommended size 1200x635px -
     Thumbnail 190x130px
 
 2) Jssor_2- no thumbnails - recommended size: 790x525px
